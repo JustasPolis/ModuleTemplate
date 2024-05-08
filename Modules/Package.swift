@@ -18,6 +18,14 @@ let package = Package(
     ]),
     .target(name: "Models", dependencies: [
     ]),
+    .target(name: "TestExtensions", dependencies: [
+      "Difference",
+      .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
+    ]),
+    .testTarget(name: "ModelsTests", dependencies: [
+      "Models",
+      "TestExtensions"
+    ]),
     .target(name: "AppFeature", dependencies: [
       "Views",
       "Models"
