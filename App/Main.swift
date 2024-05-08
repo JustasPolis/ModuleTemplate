@@ -4,9 +4,9 @@ import AppFeature
 @main
 struct Main: App {
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }

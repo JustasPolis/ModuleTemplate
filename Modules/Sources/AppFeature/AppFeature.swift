@@ -1,6 +1,10 @@
 import SwiftUI
+import Views
 
 public struct ContentView: View {
+
+  @ObserveInjection private var injection
+
   public init() {}
 
   public var body: some View {
@@ -11,5 +15,6 @@ public struct ContentView: View {
       Text("Hello, world!")
     }
     .padding()
+    .enableInjection()
   }
 }
