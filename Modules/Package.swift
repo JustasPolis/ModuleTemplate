@@ -13,23 +13,38 @@ let package = Package(
     .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", exact: "1.12.0"),
   ],
   targets: [
-    .target(name: "Views", dependencies: [
-      "Inject"
-    ]),
-    .target(name: "Models", dependencies: [
-    ]),
-    .target(name: "TestExtensions", dependencies: [
-      "Difference",
-      .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
-    ]),
-    .testTarget(name: "ModelsTests", dependencies: [
-      "Models",
-      "TestExtensions"
-    ]),
-    .target(name: "AppFeature", dependencies: [
-      "Views",
-      "Models"
-    ]),
+    .target(
+      name: "Views",
+      dependencies: [
+        "Inject"
+      ]
+    ),
+    .target(
+      name: "Models",
+      dependencies: [
+      ]
+    ),
+    .target(
+      name: "TestExtensions",
+      dependencies: [
+        "Difference",
+        .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
+      ]
+    ),
+    .testTarget(
+      name: "ModelsTests",
+      dependencies: [
+        "Models",
+        "TestExtensions"
+      ]
+    ),
+    .target(
+      name: "AppFeature",
+      dependencies: [
+        "Views",
+        "Models"
+      ]
+    ),
   ]
 )
 

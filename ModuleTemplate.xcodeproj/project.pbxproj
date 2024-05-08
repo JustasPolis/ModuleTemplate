@@ -39,7 +39,6 @@
 				214153CB2BEBD88D001787CF /* Modules */,
 				21696CFB2BEBD6BE003758D2 /* App */,
 				21696CFA2BEBD6BE003758D2 /* Products */,
-				21DB6D962BEBE988007EA2DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +66,6 @@
 				21696D032BEBD6BF003758D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		21DB6D962BEBE988007EA2DF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
