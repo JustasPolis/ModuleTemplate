@@ -1,10 +1,10 @@
-import XCTest
 @testable import Models
 import TestExtensions
+import XCTest
 
 final class TestModelTests: XCTestCase {
 
   func test_smoke() {
-    XCTAssert(true)
+    XCTAssertEqual([1, 2, 3], [1, 2, 3])
   }
 }
